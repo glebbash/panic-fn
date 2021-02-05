@@ -1,10 +1,10 @@
-# panic-js
+# panic-fn
 Functional way of throwing errors in JS/TS
 
 ## Usage:
 
 ```js
-import { panic } from 'panic';
+import { panic } from 'panic-fn';
 
 panic('Oops');
 // or

@@ -1,5 +1,5 @@
 {
-  "name": "panic-js",
+  "name": "panic-fn",
   "version": "1.0.0",
   "description": "Functional way of throwing errors in Node.js",
   "main": "dist/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/glebbash/panic-js.git"
+    "url": "git+https://github.com/glebbash/panic-fn.git"
   },
   "keywords": [
     "panic",
@@ -24,9 +24,9 @@
   "author": "glebbash",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/glebbash/panic-js/issues"
+    "url": "https://github.com/glebbash/panic-fn/issues"
   },
-  "homepage": "https://github.com/glebbash/panic-js#readme",
+  "homepage": "https://github.com/glebbash/panic-fn#readme",
   "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.12.0",
