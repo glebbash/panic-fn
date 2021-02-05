@@ -1,12 +1,26 @@
 # panic-fn
 Functional way of throwing errors in JS/TS
 
-## Usage:
+## Installation
 
+### Node
 ```js
-import { panic } from 'panic-fn';
+// npm i panic-fn
 
-panic('Oops');
-// or
-panic(new Error('Custom error'));
+import { panic } from 'panic-fn';
+```
+
+### Deno
+```js
+import { panic } from 'deno.land/x/panic_fn@v1.0.2';
+```
+
+
+## Usage
+```js
+// throw new Error() with message
+panic('Oops...');
+
+// throw custom error
+panic(new SyntaxError('Oops...'));
 ```
