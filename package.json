@@ -9,7 +9,7 @@
     "format": "eslint --fix .",
     "test": "jest",
     "build": "tsc --project tsconfig.build.json",
-    "prepare": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
