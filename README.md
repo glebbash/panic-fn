@@ -12,7 +12,7 @@ import { panic } from 'panic-fn';
 
 ### Deno
 ```js
-import { panic } from 'deno.land/x/panic_fn@v1.0.2';
+import { panic } from 'deno.land/x/panic_fn@v1.0.3/mod.ts';
 ```
 
 
