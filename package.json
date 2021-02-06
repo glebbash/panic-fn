@@ -1,6 +1,6 @@
 {
   "name": "panic-fn",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Functional way of throwing errors in JS/TS",
   "main": "dist/panic.js",
   "types": "dist/panic.d.ts",
