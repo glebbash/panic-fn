@@ -31,7 +31,7 @@ await build({
 
 const typeDocTSConfig = {
   compilerOptions: {
-    module: "ESNEXT",
+    module: "NodeNext",
   },
 };
 
