@@ -11,7 +11,7 @@ await build({
   package: {
     // package.json properties
     name: "panic-fn",
-    version: "0.0.0-development",
+    version: "0.0.0",
     description: "Functional way of throwing errors in JS/TS",
     license: "MIT",
     repository: {
