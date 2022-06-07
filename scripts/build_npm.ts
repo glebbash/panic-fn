@@ -41,6 +41,5 @@ const typeDocTSConfig = {
 
 // post build steps
 Deno.writeTextFileSync("npm/tsconfig.json", JSON.stringify(typeDocTSConfig));
-Deno.removeSync("npm/.npmrc");
 Deno.copyFileSync("LICENSE", "npm/LICENSE");
 Deno.copyFileSync("README.md", "npm/README.md");
