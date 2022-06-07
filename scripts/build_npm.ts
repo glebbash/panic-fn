@@ -11,7 +11,7 @@ await build({
   package: {
     // package.json properties
     name: "panic-fn",
-    author": "glebbash <glebbash@gmail.com>,
+    author: "glebbash <glebbash@gmail.com>",
     version: "0.0.0",
     description: "Functional way of throwing errors in JS/TS",
     license: "MIT",
