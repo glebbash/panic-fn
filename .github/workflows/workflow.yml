@@ -19,11 +19,11 @@ jobs:
       - name: Analyze code
         run: deno lint
 
-      - name: Test on Node
-        run: deno run -A ./scripts/build_npm.ts
-
       - name: Run unit and integration tests
         run: deno test -A --coverage=cov --doc
+
+      - name: Test on Node
+        run: deno run -A ./scripts/build_npm.ts
 
       - name: Generate coverage report
         run: deno coverage --lcov cov > cov.lcov
