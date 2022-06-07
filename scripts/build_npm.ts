@@ -29,6 +29,13 @@ await build({
   },
 });
 
+const typeDocTSConfig = {
+  compilerOptions: {
+    module: "ESNEXT",
+  },
+};
+
 // post build steps
+Deno.writeTextFileSync("npm/tsconfig.json", JSON.stringify(typeDocTSConfig));
 Deno.copyFileSync("LICENSE", "npm/LICENSE");
 Deno.copyFileSync("README.md", "npm/README.md");
