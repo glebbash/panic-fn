@@ -1,26 +1,55 @@
 # panic-fn
+
+[![Deploy](https://github.com/glebbash/panic-fn/workflows/build/badge.svg)](https://github.com/glebbash/panic-fn/actions)
+[![Coverage Status](https://coveralls.io/repos/github/glebbash/panic-fn/badge.svg?branch=master)](https://coveralls.io/github/glebbash/panic-fn?branch=master)
+
+
 Functional way of throwing errors in JS/TS
+
+## Why?
+
+Have you ever tried to do this?
+
+```ts
+() => throw new Error("Not implemented");
+// or this
+doStuff(value ?? throw new Error("No value provided"));
+```
+
+But got `Uncaught SyntaxError: Unexpected token 'throw'`. 
+
+With `panic-fn` it works as expected.
+
+```ts
+() => panic("Not implemented");
+// or this
+doStuff(value ?? panic("No value provided"));
+```
+
+You can also throw custom errors:
+
+```ts
+panic(new SyntaxError(`Unexpected token 'throw'`));
+```
+
 
 ## Installation
 
 ### Node
-```js
-// npm i panic-fn
 
+Install:
+
+```bash
+npm i panic-fn
+```
+
+Use:
+
+```ts
 import { panic } from 'panic-fn';
 ```
 
 ### Deno
-```js
-import { panic } from 'deno.land/x/panic_fn@v1.0.3/mod.ts';
-```
-
-
-## Usage
-```js
-// throw new Error() with message
-panic('Oops...');
-
-// throw custom error
-panic(new SyntaxError('Oops...'));
+```ts
+import { panic } from 'https://deno.land/x/panic_fn/mod.ts';
 ```
