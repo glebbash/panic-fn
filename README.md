@@ -1,7 +1,7 @@
 # panic-fn
 
-[![Deploy](https://github.com/glebbash/panic-fn/workflows/build/badge.svg)](https://github.com/glebbash/panic-fn/actions)
-[![Coverage Status](https://coveralls.io/repos/github/glebbash/panic-fn/badge.svg?branch=master)](https://coveralls.io/github/glebbash/panic-fn?branch=master)
+[![Deploy](https://github.com/glebbash/panic-fn/workflows/release/badge.svg)](https://github.com/glebbash/panic-fn/actions)
+[![Coverage Status](https://coveralls.io/repos/github/glebbash/panic-fn/badge.svg?branch=master)](https://coveralls.io/github/glebbash/panic-fn?branch=main)
 
 Functional way of throwing errors in JS/TS
 
