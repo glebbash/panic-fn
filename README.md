@@ -10,7 +10,7 @@ Functional way of throwing errors in JS/TS
 Have you ever tried to do this?
 
 ```ts
-() => throw new Error("Not implemented");
+callback(() => throw new Error("Not implemented"));
 // or this
 doStuff(value ?? throw new Error("No value provided"));
 ```
@@ -20,7 +20,7 @@ But got `Uncaught SyntaxError: Unexpected token 'throw'`.
 With `panic-fn` it works as expected.
 
 ```ts
-(() => panic("Not implemented"));
+callback(() => panic("Not implemented"));
 // or this
 doStuff(value ?? panic("No value provided"));
 ```
