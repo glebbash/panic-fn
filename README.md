@@ -3,7 +3,6 @@
 [![Deploy](https://github.com/glebbash/panic-fn/workflows/build/badge.svg)](https://github.com/glebbash/panic-fn/actions)
 [![Coverage Status](https://coveralls.io/repos/github/glebbash/panic-fn/badge.svg?branch=master)](https://coveralls.io/github/glebbash/panic-fn?branch=master)
 
-
 Functional way of throwing errors in JS/TS
 
 ## Why?
@@ -37,13 +36,9 @@ panic(new SyntaxError(`Unexpected token 'throw'`));
 
 ### Node
 
-Install:
-
 ```bash
 npm i panic-fn
 ```
-
-Use:
 
 ```ts
 import { panic } from 'panic-fn';
