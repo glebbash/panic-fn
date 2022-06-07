@@ -64,9 +64,8 @@ jobs:
           cd npm && npx typedoc --out docs src/mod.ts
 
       - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v3
-        with:
-          working_directory: ./npm
+        run: |
+          cd npm && npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
