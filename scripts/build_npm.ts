@@ -26,6 +26,9 @@ await build({
       "semantic-release": "^19.0.2",
       "typedoc": "0.22.17",
     },
+    release: {
+      branches: ["main"],
+    },
   },
 });
 
