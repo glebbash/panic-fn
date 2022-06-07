@@ -20,7 +20,7 @@ jobs:
         run: deno lint
 
       - name: Run unit and integration tests
-        run: deno test -A --coverage=cov --doc
+        run: deno test -A --coverage=cov
 
       - name: Test on Node
         run: deno run -A ./scripts/build_npm.ts
