@@ -1,1 +1,1 @@
-export * from ',/mod.ts';
+export * from "./panic.ts";
