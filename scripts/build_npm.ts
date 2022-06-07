@@ -24,8 +24,8 @@ await build({
     homepage: "https://github.com/glebbash/panic-fn#readme",
     devDependencies: {
       "semantic-release": "^19.0.2",
-      "typedoc": "0.22.17"
-    }
+      "typedoc": "0.22.17",
+    },
   },
 });
 

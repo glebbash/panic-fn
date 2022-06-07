@@ -15,12 +15,12 @@ Have you ever tried to do this?
 doStuff(value ?? throw new Error("No value provided"));
 ```
 
-But got `Uncaught SyntaxError: Unexpected token 'throw'`. 
+But got `Uncaught SyntaxError: Unexpected token 'throw'`.
 
 With `panic-fn` it works as expected.
 
 ```ts
-() => panic("Not implemented");
+(() => panic("Not implemented"));
 // or this
 doStuff(value ?? panic("No value provided"));
 ```
@@ -31,7 +31,6 @@ You can also throw custom errors:
 panic(new SyntaxError(`Unexpected token 'throw'`));
 ```
 
-
 ## Installation
 
 ### Node
@@ -41,10 +40,11 @@ npm i panic-fn
 ```
 
 ```ts
-import { panic } from 'panic-fn';
+import { panic } from "panic-fn";
 ```
 
 ### Deno
+
 ```ts
-import { panic } from 'https://deno.land/x/panic_fn/mod.ts';
+import { panic } from "https://deno.land/x/panic_fn/mod.ts";
 ```
