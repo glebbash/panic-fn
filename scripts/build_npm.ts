@@ -35,10 +35,12 @@ await build({
 
 // post build steps
 
-const additionalNpmIgnoreFiles = ["docs/", 'tsconfig.json'].join("\n");
+const additionalNpmIgnoreFiles = ["docs/", "tsconfig.json"].join("\n");
 const typeDocTSConfig = { compilerOptions: { module: "NodeNext" } };
 
 await Deno.copyFile("LICENSE", "npm/LICENSE");
 await Deno.copyFile("README.md", "npm/README.md");
 await Deno.writeTextFile("npm/tsconfig.json", JSON.stringify(typeDocTSConfig));
-await Deno.writeTextFile("npm/.npmignore", additionalNpmIgnoreFiles, { append: true });
+await Deno.writeTextFile("npm/.npmignore", additionalNpmIgnoreFiles, {
+  append: true
+});
