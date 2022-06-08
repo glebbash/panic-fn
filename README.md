@@ -1,5 +1,6 @@
 # panic-fn
 
+[![Source](https://img.shields.io/badge/source-github-informational)](https://github.com/glebbash/panic-fn)
 [![Deploy](https://github.com/glebbash/panic-fn/actions/workflows/release.yml/badge.svg)](https://github.com/glebbash/panic-fn/actions)
 [![Coverage Status](https://coveralls.io/repos/github/glebbash/panic-fn/badge.svg?branch=main)](https://coveralls.io/github/glebbash/panic-fn?branch=main)
 
@@ -48,3 +49,9 @@ import { panic } from "panic-fn";
 ```ts
 import { panic } from "https://deno.land/x/panic_fn/mod.ts";
 ```
+
+## Module info
+
+This module was created using [denoland/dnt](https://github.com/denoland/dnt).
+
+Source is written in Deno and compiles to both Node.js CJS and ESM.
